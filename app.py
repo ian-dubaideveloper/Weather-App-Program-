@@ -1,4 +1,4 @@
-# install required libraries:
+# install required libraries:,
 # pip install Flask
 # pip install Flask-SQLAlchemy
 
@@ -78,6 +78,7 @@ def delete_city( name ):
 
     flash(f'Successfully deleted { city.name }!', 'success')
     return redirect(url_for('index_get'))
+
 
 if __name__ == '__main__':
     db.create_all()
