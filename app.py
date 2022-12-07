@@ -59,9 +59,9 @@ def index_post():
                 db.session.add(new_city_obj)
                 db.session.commit()
             else:
-                err_msg = 'That is not a valid city!'
+                err_msg = 'That isnt a  valid city!'
         else:
-            err_msg = 'City already exists in the database!'
+            err_msg = 'City already exists !' #already existing in a database
 
     if err_msg:
         flash(err_msg, 'error')
